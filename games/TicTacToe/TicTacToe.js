@@ -37,5 +37,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    fun
-})
+    function checkWinner() {
+        return winningConditions.same(condition => {
+            return condition.every(index => board[index] === currentPlayer);
+        });
+    }
+
+    function resetGame() {
+        board = ["", "", "", "", "", "", "", "", ""];
+      gameActive = true;
+      currentPlayer = "X";
+      cells.forEach(cell => (cell.textContent = ""));
+      statusText.textContent = `Player X's turn`;
+    }
+  
+    // legger til click på celler
+    cells.forEach(cell => cell.addEventListener("click", handleCellClick));
+  
+    // reseter game'et når du kilker på de nevnte under
+    document.getElementById("pvp").addEventListener("click", resetGame);
+    document.getElementById("pve").addEventListener("click", resetGame);
+    document.getElementById("reset-button").addEventListener("click", resetGame);
+  });
