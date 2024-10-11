@@ -12,7 +12,29 @@
 
 
         <!--Modus valg knapper-->
+        <div class="mode-selection">
+            <button class="pvp" id="pvp">Player VS Player</button>
+            <button class="pve" id="pve">Player VS Bot</button>
+        </div>
+
+
+        <!-- Tic-Tac-Toe Brett-->
+         <div class="grid">
+            <div class="cell" id="cell0"></div>
+            <div class="cell" id="cell1"></div>
+            <div class="cell" id="cell2"></div>
+            <div class="cell" id="cell3"></div>
+            <div class="cell" id="cell4"></div>
+            <div class="cell" id="cell5"></div>
+            <div class="cell" id="cell6"></div>
+            <div class="cell" id="cell7"></div>
+            <div class="cell" id="cell8"></div>
+         </div>
+
+        <p id="status"></p> <!--Displayer sill staus (vinn, tapp, etc.)-->
+        <button class="reset-button" id="reset-button">Reset</button>
     </div>
     
+    <script src="scriptTTT.js"></script> <!--Javascript filen som håller styr på spilet-->
 </body>
 </html>
