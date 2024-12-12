@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
     <title>Game Hub</title>
 </head>
 <body>
@@ -42,6 +42,6 @@
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static',filename='javascriptFileName.js') }}"></script>
 </body>
 </html>
