@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleTTT.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styleTTT.css') }}">
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
@@ -20,21 +20,21 @@
 
         <!-- Tic-Tac-Toe Brett-->
          <div class="grid">
-            <div class="cell" id="cell0"></div>
-            <div class="cell" id="cell1"></div>
-            <div class="cell" id="cell2"></div>
-            <div class="cell" id="cell3"></div>
-            <div class="cell" id="cell4"></div>
-            <div class="cell" id="cell5"></div>
-            <div class="cell" id="cell6"></div>
-            <div class="cell" id="cell7"></div>
-            <div class="cell" id="cell8"></div>
+            <div class="cell" id="cell0" data-index="0"></div>
+            <div class="cell" id="cell1" data-index="1"></div>
+            <div class="cell" id="cell2" data-index="2"></div>
+            <div class="cell" id="cell3" data-index="3"></div>
+            <div class="cell" id="cell4" data-index="4"></div>
+            <div class="cell" id="cell5" data-index="5"></div>
+            <div class="cell" id="cell6" data-index="6"></div>
+            <div class="cell" id="cell7" data-index="7"></div>
+            <div class="cell" id="cell8" data-index="8"></div>
          </div>
 
         <p id="status"></p> <!--Displayer sill staus (vinn, tapp, etc.)-->
         <button class="reset-button" id="reset-button">Reset</button>
     </div>
     
-    <script src="TicTacToe.js"></script> 
+    <script src="{{ url_for('static',filename='scripts/TicTacToe.js') }}"></script> 
 </body>
 </html>

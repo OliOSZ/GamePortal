@@ -38,7 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function checkWinner() {
-        return winningConditions.same(condition => {
+        debugger;
+        return winningConditions.some(condition => {
+            debugger;
             return condition.every(index => board[index] === currentPlayer);
         });
     }

@@ -19,6 +19,17 @@ body {
     color: white;
 }
 
+.logo {
+    max-width: 90px;
+}
+
+.logo-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: default;
+}
+
 .navbar .logo {
     font-size: 28px;
     font-weight: bold;
@@ -43,7 +54,7 @@ body {
     gap: 15px;
 }
 
-.navbar .profile button {
+.navbar .profile .profile-button {
     padding: 10px 20px;
     background-color: #ffcc00;
     color: #202020;
@@ -53,7 +64,7 @@ body {
     font-weight: bold;
 }
 
-.navbar .profile button:hover {
+.navbar .profile .profile-button {
     background-color: #ffc107;
 }
 
