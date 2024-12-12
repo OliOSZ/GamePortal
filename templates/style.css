@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.navbar .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.navbar .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.navbar .profile {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .profile button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #202020;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar .profile button:hover {
+    background-color: #ffc107;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.game-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.game-card img {
+    max-width: 200px;
+    height: 160px;
+}
+
+.game-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #202020;
+}
+
+.game-card a {
+    text-decoration: none;
+    color: white;
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.game-card a:hover {
+    background-color: #ffc107;
+}
