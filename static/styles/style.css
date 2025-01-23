@@ -54,10 +54,14 @@ body {
     gap: 15px;
 }
 
+#bx-user-circle{
+    font-size: 2rem;
+}
+
 .navbar .profile .profile-button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #ffcc00;
-    color: #202020;
+    color: #e9e9e9ee;
     border: none;
     border-radius: 25px;
     cursor: pointer;
