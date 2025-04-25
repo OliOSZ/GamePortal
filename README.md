@@ -2,6 +2,7 @@
 
 **GamePortal** er en webapplikasjon som samler flere små spill på ett sted. Målet er å lage en brukervennlig portal hvor spillere enkelt kan finne og spille enkle, nettbaserte spill uten behov for nedlasting.
 
+
 ## 📌 Innhold
 
 - [Hva er GamePortal?](#hva-er-gameportal)
@@ -16,34 +17,40 @@
 
 ## Hva er GamePortal?
 
-GamePortal er et samlingspunkt for små nettbaserte spill utviklet i HTML, CSS og JavaScript. Den fungerer som en digital spillhall hvor brukeren kan velge mellom ulike minispill. Plattformen er utviklet med fokus på enkelhet, tilgjengelighet og moro.
+GamePortal er et samlingspunkt for små nettbaserte spill utviklet i JavaScript/Typescript. Den fungerer som en digital spillhall hvor brukeren kan velge mellom ulike minispill. Plattformen er utviklet med fokus på enkelhet, tilgjengelighet og moro.
 
 ## Hvordan bruke det
 
-1. Gå til [nettadressen/prosjektet](https://github.com/OliOSZ/GamePortal)
-2. Last ned eller klon prosjektet
-3. Åpne `index.html` i en nettleser
-4. Klikk på spillet du vil spille
+1. Gå til [nettadressen/prosjektet/FAQ]
+2. Resten står der
+ ---
+1. Last ned eller klon prosjektet
+2. Run `Server.js` i konsoll for backend
+3. Run `index.tsx` i konsoll for frontend
+5. Så har du spillet lokalt
+6. Se [Installajson] for mer info
 
 ## Målgruppe
 
 Prosjektet er ment for:
 
-- Barn og ungdom som ønsker å spille enkle spill på PC
-- Foreldre og lærere som ønsker en trygg plattform for spill
+- Barn og ungdom som ønsker å spille masse enkle spill på PC
+- Lærere som ønsker en trygg plattform for spill som beløning til elever 
 - Utviklere som vil se eksempler på små spill med åpen kildekode
 
 ## Teknologier
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla)  
+- JavaScript
+- TypeScript
+- Node.js  
 - Git og GitHub
 
 ## Hvorfor disse teknologiene?
 
 - **HTML/CSS/JS** gir fleksibilitet og gjør det enkelt å lage små, lett tilgjengelige spill
-- **Vanilla JS** er valgt for å unngå tunge rammeverk og holde applikasjonen enkel og rask
+- **TypeScript** er valgt fordi jeg kan (jeg ville)
 - **Git og GitHub** gir versjonskontroll og gjør det enkelt å samarbeide og dokumentere utviklingen
 
 ## Installasjon
@@ -51,8 +58,19 @@ Prosjektet er ment for:
 ```bash
 git clone https://github.com/OliOSZ/GamePortal.git
 cd GamePortal
+
+Frontend
+npm run dev index.tsx
+
+Backend
+
+npm install
 ```
 
+<!-- npm install express
+npm install -g nodemon
+npm install express cors pg dotenv
+npm install express pg bcryptjs jsonwebtoken dotenv-->
 
 
 ## Videre utvikling
@@ -60,3 +78,4 @@ cd GamePortal
 - Mulighet for high scores
 - Tilrettelegging for mobilbruk
 - Fokus på universell utforming og tilgjengelighet
+- Compalier for Pyhton spill
