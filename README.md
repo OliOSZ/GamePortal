@@ -59,12 +59,14 @@ Prosjektet er ment for:
 git clone https://github.com/OliOSZ/GamePortal.git
 cd GamePortal
 
-Frontend
-npm run dev index.tsx
+Frontend:
+cd client
+npm run dev 
 
 Backend
-
+cd server
 npm install
+npm run dev
 ```
 
 <!-- npm install express
