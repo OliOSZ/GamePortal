@@ -25,10 +25,9 @@ GamePortal er et samlingspunkt for små nettbaserte spill utviklet i JavaScript/
 2. Resten står der
  ---
 1. Last ned eller klon prosjektet
-2. Run `Server.js` i konsoll for backend
-3. Run `index.tsx` i konsoll for frontend
-5. Så har du spillet lokalt
-6. Se [Installajson] for mer info
+2. Run npm run dev for frontend og backend
+3. Så har du spillet lokalt
+4. Se [Installajson] for mer info
 
 ## Målgruppe
 
