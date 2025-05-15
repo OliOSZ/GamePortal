@@ -1,3 +1,7 @@
-export default function App() {
-  return <p>sfdsf</p>
+import Home from './pages/Home';
+
+function App() {
+  return <Home />;
 }
+
+export default App;
