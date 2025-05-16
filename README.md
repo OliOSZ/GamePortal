@@ -43,13 +43,15 @@ Prosjektet er ment for:
 - CSS3  
 - JavaScript
 - TypeScript
+- React
+- Tailwind
 - Node.js  
 - Git og GitHub
 
 ## Hvorfor disse teknologiene?
 
 - **HTML/CSS/JS** gir fleksibilitet og gjør det enkelt å lage små, lett tilgjengelige spill
-- **TypeScript** er valgt fordi jeg kan (jeg ville)
+- **TypeScript/React/Tailwind** er valgt fordi jeg kan (jeg ville)
 - **Git og GitHub** gir versjonskontroll og gjør det enkelt å samarbeide og dokumentere utviklingen
 
 ## Installasjon
@@ -60,6 +62,7 @@ cd GamePortal
 
 Frontend:
 cd client
+npm install
 npm run dev 
 
 Backend
