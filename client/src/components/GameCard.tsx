@@ -1,14 +1,15 @@
-import { Game } from "@/types";
-
-interface Props {
-  game: Game;
+interface GameCardProps {
+    title: string;
+    image: string;
+    link: string;
 }
 
-export default function GameCard({ game }: Props) {
-  return (
-    <div className="rounded-xl border p-4 shadow-md hover:bg-gray-50">
-      <h2 className="text-lg font-bold">{game.title}</h2>
-      <p>{game.genre}</p>
-    </div>
-  );
+export default function GameCard({ title, image, link }: GameCardProps) {
+    return (
+        <div className="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-transform transform hover:-translate-y-1 text-center">
+            <img src={image} alt={title} className="w-full h-40 object-cover rounded-t-lg" />
+            <h3 className="text-lg font-semibold mt-2">{title}</h3>
+            <a href={link} className="inline-block bg-yellow-400 text-white px-4 py-2 rounded-full mt-2 mb-4"> Spill </a>
+        </div>
+    );
 }
