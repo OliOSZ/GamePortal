@@ -21,7 +21,7 @@ GamePortal er et samlingspunkt for små nettbaserte spill utviklet i JavaScript/
 
 ## Hvordan bruke det
 
-1. Gå til [nettadressen/prosjektet/FAQ]
+1. Gå til [zuffi.me/FAQ]
 2. Resten står der
  ---
 1. Last ned eller klon prosjektet
@@ -80,3 +80,8 @@ npm install express pg bcryptjs jsonwebtoken dotenv-->
 - Tilrettelegging for mobilbruk
 - Fokus på universell utforming og tilgjengelighet
 - Compalier for Pyhton spill
+
+## Personvernerklæring
+
+GamePortal samler inn og behandler personopplysninger i samsvar med personopplysningsloven og GDPR. Vi samler kun inn nødvendige data for å tilby våre tjenester, og disse dataene lagres sikkert på våre servere. Brukere har rett til innsyn, retting og sletting av sine data. For spørsmål om personvern, vennligst kontakt oss på suport@zuffi.me.
+
