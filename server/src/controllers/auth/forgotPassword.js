@@ -29,7 +29,7 @@ export const forgotPassword = async (req, res) => {
         });
 
         const frontendBaseUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
-        const resetUrl = `${frontendBaseUrl}/reset-password?token=${token}`;
+        const resetUrl = `${frontendBaseUrl}/resetPassword?token=${token}`;
 
         await transporter.sendMail({
             to: email,
