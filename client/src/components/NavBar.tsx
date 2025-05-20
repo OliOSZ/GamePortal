@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav className="flex items-center justify-between bg-gray-900 p-4 text-white">
       <div className="flex items-center">
         <a href="/">
-          <img src="/assets/GamePortal_logo.png" alt="Game Hub" className="h-10"/>
+          <img src="/GamePortal_logo.png" alt="Game Hub" className="h-10"/>
         </a>
       </div>
       <div className="flex-1 mx-4">
@@ -13,7 +13,7 @@ export default function NavBar() {
       </div>
       <div>
         <a href="/login">
-        <button className="bg-yellow-400  text-white px-4 py-2 rounded-full">
+        <button className="bg-yellow-400 hover:bg-yellow-500 focus:outline-2 focus:outline-offset-2 focus:outline-yellow-500 active:bg-yellow-600  text-white px-4 py-2 rounded-full">
           <User />
         </button>
         </a>
