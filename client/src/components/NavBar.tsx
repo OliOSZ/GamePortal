@@ -1,6 +1,14 @@
 import { User } from "lucide-react";
 
-export default function NavBar() {
+export interface INavbarProps {
+  onSearchChanged?: (searchString: string) => void
+}
+export default function NavBar(props?: INavbarProps) {
+  const onSearchChanged = (event: any) => {
+    if (props?.onSearchChanged) {
+      props.onSearchChanged (event.target.value)
+    }
+  }
   return (
     <nav className="flex items-center justify-between bg-gray-900 p-4 text-white">
       <div className="flex items-center">
@@ -9,7 +17,7 @@ export default function NavBar() {
         </a>
       </div>
       <div className="flex-1 mx-4">
-        <input type="text" placeholder="Search games..." className="w-full px-4 py-2 rounded-full text-white border-color-white"/>
+        <input type="text" onChange={onSearchChanged} placeholder="Search games..." className="w-full px-4 py-2 rounded-full text-white border-color-white"/>
       </div>
       <div>
         <a href="/login">
