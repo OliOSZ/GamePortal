@@ -53,7 +53,17 @@ export default function Signup() {
         <button type="submit" className="w-full bg-gray-300 hover:bg-gray-400 text-black py-3 rounded mt-2">
             Sign Up
         </button>
-        {message && <div className="mt-4 text-center text-red-500">{message}</div>}
+        {message && (
+          <div
+            className={`mt-4 text-center ${
+              message === "User registered successfully"
+                ? "text-green-600"
+                : "text-red-500"
+            }`}
+          >
+            {message}
+          </div>
+        )}
         <div className="mt-4 text-center">
             <a href="/login" className="text-blue-500 hover:underline">
             Already have an account?

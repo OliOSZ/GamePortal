@@ -67,7 +67,14 @@ export default function Login() {
                     Login
                 </button>
                 {message && (
-                    <div className="mt-4 text-center text-red-500">{message}</div>
+                    <div
+                        className={`mt-4 text-center ${message === "Login successful"
+                                ? "text-green-600"
+                                : "text-red-500"
+                            }`}
+                    >
+                        {message}
+                    </div>
                 )}
                 <div className="mt-4 text-center">
                     <a href="/" className="text-blue-500 hover:underline">
