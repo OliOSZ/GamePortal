@@ -1,5 +1,6 @@
 import pool from "../../config/db.js";
 import bcrypt from "bcryptjs";
+import crypto from 'crypto';
 
 export const registerUser = async (req, res) => {
   try {
@@ -15,12 +16,13 @@ export const registerUser = async (req, res) => {
       return res.status(400).json({ message: "Username is already taken" });
     }
 
+    const userId = crypto.randomUUID();
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
     const newUser = await pool.query(
-      "INSERT INTO users (username, email, password_hash) VALUES ($1, $2, $3) RETURNING id, username, email",
-      [username, email, hashedPassword]
+      "INSERT INTO users (id, username, email, password_hash) VALUES ($1, $2, $3, $4) RETURNING id, username, email",
+      [userId, username, email, hashedPassword]
     );
 
     res.status(201).json({ message: "User registered successfully", user: newUser.rows[0] });
