@@ -25,9 +25,10 @@ GamePortal er et samlingspunkt for små nettbaserte spill utviklet i JavaScript/
 2. Resten står der
  ---
 1. Last ned eller klon prosjektet
-2. Run npm run dev for frontend og backend
-3. Så har du spillet lokalt
-4. Se [Installajson] for mer info
+2. Gjør npm install (se [Installajson] vis du ikke har node)
+3. Run npm run dev for frontend og backend
+4. Så har du spillet lokalt
+5. Se [Installajson] for mer info
 
 ## Målgruppe
 
@@ -58,7 +59,6 @@ Prosjektet er ment for:
 
 ```bash
 git clone https://github.com/OliOSZ/GamePortal.git
-cd GamePortal
 
 Frontend:
 cd client
@@ -70,6 +70,7 @@ cd server
 npm install
 npm run dev
 ```
+(Vis du ikke har node se: https://nodejs.org/en/download)
 
 <!-- npm install express
 npm install -g nodemon
