@@ -34,7 +34,7 @@ GamePortal er et samlingspunkt for små nettbaserte spill utviklet i JavaScript/
 
 Prosjektet er ment for:
 
-- Barn og ungdom som ønsker å spille masse enkle spill på PC
+- Barn og ungdom som ønsker å spille masse enkle spill på PC eller mobil
 - Lærere som ønsker en trygg plattform for spill som beløning til elever 
 - Utviklere som vil se eksempler på små spill med åpen kildekode
 
@@ -52,7 +52,7 @@ Prosjektet er ment for:
 ## Hvorfor disse teknologiene?
 
 - **HTML/CSS/JS** gir fleksibilitet og gjør det enkelt å lage små, lett tilgjengelige spill
-- **TypeScript/React/Tailwind** er valgt fordi jeg kan (jeg ville)
+- **TypeScript/React/Tailwind** er valgt fordi det har mye praktisk bruk (jeg ville)
 - **Git og GitHub** gir versjonskontroll og gjør det enkelt å samarbeide og dokumentere utviklingen
 
 ## Installasjon
