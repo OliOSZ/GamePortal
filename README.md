@@ -21,7 +21,7 @@ GamePortal er et samlingspunkt for små nettbaserte spill utviklet i JavaScript/
 
 ## Hvordan bruke det
 
-1. Gå til [zuffi.me/FAQ]
+1. Gå til [gameportal.zuffi.me/FAQ]
 2. Resten står der
  ---
 1. Last ned eller klon prosjektet
