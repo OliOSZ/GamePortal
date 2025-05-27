@@ -17,6 +17,7 @@ export default function Login() {
             if (data.token) {
                 localStorage.setItem("token", data.token);
                 setMessage("Login successful");
+                window.location.replace("/")
             } else {
                 setMessage(data.message || "Login failed");
             }

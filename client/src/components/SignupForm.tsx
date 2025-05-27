@@ -15,6 +15,7 @@ export default function Signup() {
     try {
       const data = await signup(form.username, form.email, form.password);
       setMessage(data.message);
+      window.location.replace("/")
     } catch {
       setMessage("Something went wrong");
     }
