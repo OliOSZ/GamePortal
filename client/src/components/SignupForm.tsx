@@ -23,13 +23,18 @@ export default function Signup() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setMessage("");
+    if (!validatePassword()) {
+      return;
+    }
     try {
-      if (validatePassword()) {
-        
-      }
       const data = await signup(form.username, form.email, form.password);
       setMessage(data.message);
-      window.location.replace("/")
+
+      if (data.message === "User registered successfully") {
+        setTimeout(() => {
+          window.location.replace("/");
+        }, 1000);
+      }
     } catch {
       setMessage("Something went wrong");
     }
