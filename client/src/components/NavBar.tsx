@@ -1,4 +1,6 @@
-import { User } from "lucide-react";
+
+import BurgerMenu from "./BurgerMenu";
+import LoginMenu from "./LoginMenu";
 
 export interface INavbarProps {
   onSearchChanged?: (searchString: string) => void
@@ -19,12 +21,9 @@ export default function NavBar(props?: INavbarProps) {
       <div className="flex-1 mx-4">
         <input type="text" onChange={onSearchChanged} placeholder="Search games..." className="w-full px-4 py-2 rounded-full text-white border-color-white"/>
       </div>
-      <div>
-        <a href="/login">
-        <button className="bg-yellow-400 hover:bg-yellow-500 focus:outline-2 focus:outline-offset-2 focus:outline-yellow-500 active:bg-yellow-600  text-white px-4 py-2 rounded-full">
-          <User />
-        </button>
-        </a>
+      <div className="flex items-center gap-3">
+        <LoginMenu />
+        <BurgerMenu />
       </div>
     </nav>
   );
