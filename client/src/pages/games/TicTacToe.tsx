@@ -1,5 +1,6 @@
 import { useState } from "react";
 import NavBar from "../../components/NavBar";
+import { useNavigate } from "react-router-dom";
 
 const winConditions = [
   [0, 1, 2],
@@ -17,6 +18,8 @@ export default function TicTacToe() {
   const [currentPlayer, setCurrentPlayer] = useState("X");
   const [status, setStatus] = useState("Player X's turn");
   const [gameActive, setGameActive] = useState(true);
+
+  const navigate = useNavigate();
 
   const checkWinner = (brd = board, player = currentPlayer) =>
     winConditions.some(condition =>
@@ -60,14 +63,12 @@ export default function TicTacToe() {
           <div className="mb-4 flex justify-center gap-8">
             <button
               className="px-4 py-2 bg-blue-200 rounded hover:bg-blue-300 transition"
-              onClick={resetGame}
-            >
+              onClick={resetGame}>
               PvP
             </button>
             <button
               className="px-4 py-2 bg-green-200 rounded hover:bg-green-300 transition"
-              onClick={resetGame}
-            >
+              onClick={() => navigate("/TicTacToePvE")}>
               PvE
             </button>
           </div>

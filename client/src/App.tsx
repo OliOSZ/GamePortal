@@ -5,6 +5,7 @@ import ForgotPassword from "./components/forgotPassword";
 import Signup from "./components/SignupForm";
 import TicTacToe from "./pages/games/TicTacToe";
 import CreateAccount from "./pages/tutorial/CreateAccount";
+import TicTacToePvE from "./pages/games/TicTacToePvE";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/forgotPassword" element={<ForgotPassword />} />
         <Route path="/TicTacToe" element={<TicTacToe />} />
         <Route path="/tutorial/create-account" element={<CreateAccount />} />
+        <Route path="/TicTacToePvE" element={<TicTacToePvE />} />
       </Routes>
     </Router>
   );
